@@ -1,3 +1,6 @@
+开源中国2.6.5版本学习注释，如有侵权请联系270330287@qq。com
+
+
 # OSChina Android [客户端](http://www.oschina.net/app/)
 
 ##提示
