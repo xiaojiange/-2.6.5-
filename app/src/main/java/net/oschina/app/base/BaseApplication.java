@@ -17,7 +17,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-import  android.support.multidex.MultiDexApplication;
+//import  android.support.multidex.MultiDexApplication;
 import net.oschina.app.R;
 import net.oschina.app.util.StringUtils;
 
@@ -30,9 +30,9 @@ import net.oschina.app.util.StringUtils;
  * @created 2014-04-22
  */
 @SuppressLint("InflateParams")
-public class BaseApplication extends MultiDexApplication {
+public class BaseApplication extends Application {
     /**
-     * 创意锁屏？ 值为{@value}
+     * 创建锁屏？ 值为{@value}
      */
     private static String PREF_NAME = "creativelocker.pref";
     private static String LAST_REFRESH_TIME = "last_refresh_time.pref";
@@ -52,7 +52,7 @@ public class BaseApplication extends MultiDexApplication {
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);
 
-        MultiDex.install(this);
+       // MultiDex.install(this);
     }
     @Override
     public void onCreate() {
